@@ -33,7 +33,7 @@ const FAQ = () => {
   };
 
   return (
-    <section className="py-32 bg-[var(--background)]" id="faq">
+    <section className="py-36 bg-[var(--background)]" id="faq">
       <div className="container mx-auto max-w-7xl px-4">
         <h2 className="text-4xl font-extrabold text-white text-left md:text-center mb-10">
           Perguntas <span className="text-spotify">Frequentes</span>

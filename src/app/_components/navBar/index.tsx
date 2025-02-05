@@ -8,22 +8,31 @@ const Links = () => {
   return (
     <>
       <li className="nav-link">
-        <Link href="#">Home</Link>
+        <Link href="#home">Home</Link>
       </li>
       <li className="nav-link">
-        <Link href="#">Planos</Link>
+        <Link href="#planos">Planos</Link>
       </li>
       <li className="nav-link">
-        <Link href="#">Suporte</Link>
+        <Link href="#beneficios">Benefícios</Link>
+      </li>
+      <li className="nav-link">
+        <Link href="#faq">Perguntas Frequentes</Link>
       </li>
     </>
   );
 };
+
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const toggleDropdown = () => {
     setIsOpen((prev) => !prev);
+  };
+
+  const toggleSidebar = () => {
+    setSidebarOpen((prev) => !prev);
   };
 
   return (
@@ -42,29 +51,33 @@ const NavBar = () => {
               />
             </Link>
           </div>
-          <div className="navContent flex flex-row items-center gap-7">
-            <ul className="navMenu flex flex-row items-center gap-7">
+
+          <div className="navContent flex flex-row items-center ml-auto justify-end gap-7">
+            <ul className="navMenu flex-row items-center gap-7 hidden md:flex">
               <Links />
             </ul>
-            <p>|</p>
-            <ul className="flex flex-row items-center gap-4">
-              <Image
-                src="/profile.jpeg"
-                alt="Imagem de perfil"
-                width={40}
-                className="rounded-full"
-                height={40}
-              />
+            <p className="hidden md:flex">|</p>
+            <ul className="hidden md:flex flex-row items-center gap-4">
               <li
-                className="flex items-center flex-row gap-2 cursor-pointer relative"
+                className="flex items-center gap-2 cursor-pointer relative"
                 onClick={toggleDropdown}
                 onBlur={() => setIsOpen(false)}
                 tabIndex={0}
               >
-                <button className="nav-link z-[99]">
+                <Image
+                  src="/profile.jpeg"
+                  alt="Imagem de perfil"
+                  width={40}
+                  height={40}
+                  className="rounded-full"
+                />
+                <button className="hidden md:flex nav-link z-[99]">
                   Perfil
                 </button>
-                <span className="material-icons hover:text-spotify " style={{ fontSize: "18px" }}>
+                <span
+                  className="material-icons hover:text-spotify"
+                  style={{ fontSize: "18px" }}
+                >
                   keyboard_arrow_down
                 </span>
 
@@ -83,7 +96,30 @@ const NavBar = () => {
               </li>
             </ul>
           </div>
+
+          <div className="md:hidden flex items-center">
+            <button onClick={toggleSidebar} className="text-white">
+              <span className="material-icons">menu</span>
+            </button>
+          </div>
         </nav>
+      </div>
+
+      <div
+        className={`md:hidden fixed top-0 left-0 w-2/3 bg-[var(--background)] h-full z-50 transform transition-transform duration-300 ${
+          sidebarOpen ? "translate-x-0" : "-translate-x-full"
+        }`}
+      >
+        <div className="p-4 flex-1">
+          <div className="flex justify-end mt-4">
+            <button onClick={toggleSidebar} className="text-white text-2xl">
+              <span className="material-icons">close</span>
+            </button>
+          </div>
+          <ul className="space-y-6">
+            <Links />
+          </ul>
+        </div>
       </div>
     </header>
   );
