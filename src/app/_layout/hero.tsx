@@ -20,7 +20,7 @@ const Hero = () => {
       </div>
 
       <div className="relative z-10 flex flex-wrap pt-20 md:pt-0 justify-center md:flex-nowrap md:items-center md:justify-between gap-12 max-w-7xl px-2 w-full container mx-auto">
-        <div className="text-left text-white md:max-w-md lg:max-w-2xl">
+        <div className="text-left text-white lg:max-w-2xl">
           <h1
             className="text-5xl sm:text-6xl font-extrabold"
             style={{ lineHeight: 1.1 }}
@@ -46,7 +46,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="hidden absolute bottom-0 right-0 md:block">
+        <div className="hidden absolute bottom-0 right-0 lg:block">
           <Image
             loading="lazy"
             width={530}
