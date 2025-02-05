@@ -6,7 +6,7 @@ export default {
     extend: {
       colors: {
         spotify: "#1DB954",
-        spotifyHover: "#1AA34A", 
+        spotifyhover: "#23944D", 
       },
     },
   },
