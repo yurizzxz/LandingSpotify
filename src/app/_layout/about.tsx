@@ -5,11 +5,12 @@ const About = () => {
     <section className="relative flex justify-center overflow-hidden py-32 bg-[var(--background)]">
       <div className="absolute inset-0">
         <div className="absolute right-12 mt-[-2px] w-[600px] h-[550px] bg-spotify blur-[130px] opacity-5"></div>
-        <div className="absolute top-1/2 left-1 w-[500px] h-[500px] bg-green-800 rounded-full blur-[130px] opacity-10"></div>
+        <div className="absolute z-50 top-1/2 left-1 w-[500px] h-[500px] bg-green-800 rounded-full blur-[130px] opacity-10"></div>
       </div>
 
       <div className="z-10 flex flex-wrap pt-20 md:pt-0 justify-center md:flex-nowrap md:items-center md:justify-between gap-12 max-w-7xl px-2 w-full container mx-auto">
         <div className="text-left text-white md:order-2 max-w-xl">
+         
           <h1
             className="text-5xl sm:text-6xl font-extrabold"
             style={{ lineHeight: 1.1 }}
@@ -38,9 +39,9 @@ const About = () => {
           </p>
         </div>
 
-        <div className="w-full md:order-1 md:w-[550px] h-[550px] relative">
+        <div className="w-full z-[99] md:order-1 md:w-[550px] h-[550px] relative">
           <Image
-            src="/profile.jpeg" 
+            src="/profile.jpeg"
             alt="Imagem relacionada ao som"
             fill
             className="rounded-lg object-cover"

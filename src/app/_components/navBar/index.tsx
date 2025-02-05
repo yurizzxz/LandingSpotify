@@ -11,7 +11,7 @@ const Links = () => {
         <Link href="#">Home</Link>
       </li>
       <li className="nav-link">
-        <Link href="#">Premium</Link>
+        <Link href="#">Planos</Link>
       </li>
       <li className="nav-link">
         <Link href="#">Suporte</Link>
