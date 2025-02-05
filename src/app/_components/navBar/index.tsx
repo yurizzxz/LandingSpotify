@@ -19,7 +19,7 @@ const Links = () => {
 
 const NavBar = () => {
   return (
-    <header className="w-full sticky top-0 z-50">
+    <header className="w-full fixed bg-[var(--navBg)] top-0 z-50">
       <div className="container mx-auto">
         <nav className="flex justify-between flex-row items-center  py-5">
           <div className="navHeader">
