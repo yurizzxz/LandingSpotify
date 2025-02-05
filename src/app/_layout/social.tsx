@@ -22,7 +22,7 @@ const SocialProof = () => {
   return (
     <section className="py-20 bg-[var(--background)]">
       <div className="container mx-auto max-w-7xl px-4">
-        <h2 className="text-4xl font-extrabold text-white text-center mb-10">
+        <h2 className="text-4xl font-extrabold text-white text-left md:text-center mb-10">
           O que nossos <span className="text-spotify">usuários</span> dizem
         </h2>
 

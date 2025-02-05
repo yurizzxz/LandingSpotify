@@ -47,10 +47,10 @@ const Plans = () => {
   return (
     <section className="relative flex flex-col items-center overflow-hidden pt-28 md:py-28 bg-[var(--background)]">
       <div className="z-10 max-w-7xl px-2 w-full container mx-auto text-left md:text-center text-white">
-        <h1 className="text-5xl sm:text-6xl  font-extrabold">
+        <h1 className="text-4xl md:text-5xl  font-extrabold">
           <span className="text-spotify">Nossos</span> Planos
         </h1>
-        <p className="mt-4 text-xl opacity-75">
+        <p className="mt-4 text-lg md:text-xl opacity-75">
           Escolha o plano ideal para você e aproveite a melhor experiência
           musical.
         </p>

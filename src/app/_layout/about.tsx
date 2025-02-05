@@ -11,7 +11,7 @@ const About = () => {
       <div className="z-10 flex flex-wrap pt-20 md:pt-0 justify-center md:flex-nowrap md:items-center md:justify-between gap-12 max-w-7xl px-2 w-full container mx-auto">
         <div className="text-left z-[99] text-white md:order-2 max-w-2xl">
           <h1
-            className="text-5xl sm:text-6xl font-extrabold"
+            className="text-5xl sm:text-5xl font-extrabold"
             style={{ lineHeight: 1.1 }}
           >
             Sobre<span className="text-spotify"> nós</span>

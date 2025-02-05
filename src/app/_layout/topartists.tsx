@@ -1,54 +1,58 @@
 import Image from "next/image";
 
 const TopArtists = () => {
-    const artists = [
-      {
-        name: "The Weeknd",
-        image: "/theweeknd.jpg",
-      },
-      {
-        name: "Taylor Swift",
-        image: "/taylorswift.jpg",
-      },
-      {
-        name: "Billie Eilish",
-        image: "/billieeilish.jpg",
-      },
-      {
-        name: "Post Malone",
-        image: "/postmalone.jpg",
-      },
-    ];
-  
-    return (
-      <section className="py-32 bg-[var(--background)]">
-        <div className="container mx-auto max-w-7xl px-4">
-          <h2 className="text-4xl font-extrabold text-white text-center mb-16">
+  const artists = [
+    {
+      name: "The Weeknd",
+      image: "/theweeknd.jpg",
+    },
+    {
+      name: "Taylor Swift",
+      image: "/taylorswift.jpg",
+    },
+    {
+      name: "Billie Eilish",
+      image: "/billieeilish.jpg",
+    },
+    {
+      name: "Post Malone",
+      image: "/postmalone.jpg",
+    },
+  ];
+
+  return (
+    <section className="py-40 bg-[var(--background)]">
+      <div className="container mx-auto max-w-7xl px-4">
+        <div className="mb-10">
+          <h2 className="text-4xl font-extrabold text-white text-left md:text-center mb-2">
             Artistas Mais Tocados de <span className="text-spotify">2024</span>
           </h2>
-  
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {artists.map((artist, index) => (
-              <div key={index} className="group relative">
-                <div className="w-full aspect-square relative overflow-hidden rounded-lg shadow-lg">
-                  <Image
-                    src={artist.image}
-                    width={500}
-                    height={500}
-                    alt={artist.name}
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
-                </div>
-                <h3 className="text-lg font-semibold text-center text-white mt-4">
-                  {artist.name}
-                </h3>
-              </div>
-            ))}
-          </div>
+          <p className="text-lg md:text-xl opacity-75 text-left md:text-center">
+            Confira os artistas mais queridos do público em 2024!
+          </p>
         </div>
-      </section>
-    );
-  };
-  
-  export default TopArtists;
-  
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {artists.map((artist, index) => (
+            <div key={index} className="group relative">
+              <div className="w-full aspect-square border border-[var(--border)] relative overflow-hidden rounded-lg shadow-lg">
+                <Image
+                  src={artist.image}
+                  width={500}
+                  height={500}
+                  alt={artist.name}
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+              <h3 className="text-lg font-semibold text-center text-white mt-4">
+                {artist.name}
+              </h3>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default TopArtists;

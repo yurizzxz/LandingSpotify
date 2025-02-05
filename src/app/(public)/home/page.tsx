@@ -1,5 +1,6 @@
 import About from "@/app/_layout/about";
 import Benefits from "@/app/_layout/benefits";
+import FAQ from "@/app/_layout/faq";
 import Hero from "@/app/_layout/hero";
 import Plans from "@/app/_layout/plans";
 import SocialProof from "@/app/_layout/social";
@@ -13,8 +14,9 @@ export default function Home() {
       <Benefits />
       <About />
       <TopArtists />
-      <SocialProof />
       <Plans />
+      <SocialProof />
+      <FAQ />
     </main>
   );
 }
