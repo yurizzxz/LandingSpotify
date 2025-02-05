@@ -57,7 +57,7 @@ const NavBar = () => {
               <Links />
             </ul>
             <p className="hidden md:flex">|</p>
-            <ul className="hidden md:flex flex-row items-center gap-4">
+            <ul className="flex flex-row items-center gap-4">
               <li
                 className="flex items-center gap-2 cursor-pointer relative"
                 onClick={toggleDropdown}
