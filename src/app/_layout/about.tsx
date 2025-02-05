@@ -40,7 +40,8 @@ const About = () => {
 
         <div className="w-full max-w-[550px] h-auto aspect-square relative z-[99] md:order-1">
           <Image
-            src="/profile.jpeg"
+            src="/music.png"
+            loading="lazy"
             alt="Imagem relacionada ao som"
             fill
             className="rounded-lg object-cover"

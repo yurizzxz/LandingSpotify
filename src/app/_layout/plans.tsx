@@ -61,13 +61,6 @@ const Plans = () => {
               key={index}
               className="bg-[var(--cardColor)] hover:scale-[1.02] transition-all rounded-lg border border-[var(--border)] flex flex-col h-full"
             >
-              <Image
-                src="/profile.jpeg"
-                alt="Imagem relacionada ao som"
-                width={500}
-                className="rounded-t-lg w-full h-40"
-                height={200}
-              />
               <div className="py-5 px-3.5 flex flex-col flex-grow">
                 <h2 className="text-2xl font-bold text-left">
                   Premium<span className="text-spotify"> {plan.name}</span>

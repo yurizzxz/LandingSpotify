@@ -4,19 +4,19 @@ const TopArtists = () => {
   const artists = [
     {
       name: "The Weeknd",
-      image: "/theweeknd.jpg",
+      image: "/theweeknd.png",
     },
     {
       name: "Taylor Swift",
-      image: "/taylorswift.jpg",
+      image: "/taylorswift.png",
     },
     {
       name: "Billie Eilish",
-      image: "/billieeilish.jpg",
+      image: "/billieeilish.png",
     },
     {
       name: "Post Malone",
-      image: "/postmalone.jpg",
+      image: "/postmalone.png",
     },
   ];
 
@@ -34,8 +34,8 @@ const TopArtists = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {artists.map((artist, index) => (
-            <div key={index} className="group relative">
-              <div className="w-full aspect-square border border-[var(--border)] relative overflow-hidden rounded-lg shadow-lg">
+            <div key={index} className="group relative ">
+              <div className="w-full cursor-pointer  aspect-square border border-[var(--border)] relative overflow-hidden rounded-lg shadow-lg">
                 <Image
                   src={artist.image}
                   width={500}
