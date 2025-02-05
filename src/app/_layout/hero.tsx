@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="relative flex justify-center md:min-h-screen overflow-hidden bg-[var(--background)]">
+    <section className="relative flex justify-center py-6 md:py-0 md:min-h-screen overflow-hidden bg-[var(--background)]">
       <div className="absolute inset-0">
         <div className="absolute z-50 left-5 w-[600px] h-[550px] bg-spotify rounded-full blur-[130px] opacity-10"></div>
         <div className="absolute top-1/2 z-50 right-12 w-[500px] h-[500px] bg-green-800 rounded-full blur-[130px] opacity-10"></div>

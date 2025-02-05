@@ -61,10 +61,10 @@ const NavBar = () => {
                 onBlur={() => setIsOpen(false)}
                 tabIndex={0}
               >
-                <Link className="nav-link" href="#">
+                <button className="nav-link z-[99]">
                   Perfil
-                </Link>
-                <span className="material-icons" style={{ fontSize: "18px" }}>
+                </button>
+                <span className="material-icons hover:text-spotify " style={{ fontSize: "18px" }}>
                   keyboard_arrow_down
                 </span>
 
