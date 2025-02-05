@@ -7,8 +7,9 @@
   --foreground: #ededed;
   --textcolor: #fff;
   --heroBg: #080808;
-  --cardColor: #101010;
+  --cardColor: #040a08fd;
   --border: #222222;
+  --spotify: #1DB954;
 }
 
 html {
@@ -18,4 +19,15 @@ html {
 body {
   color: var(--foreground);
   background: var(--background);
+}
+
+
+.nav-link {
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: var(--spotify);
+  transition: all 0.3s ease-in-out;
 }
