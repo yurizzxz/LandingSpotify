@@ -20,11 +20,6 @@ const FAQ = () => {
         "Sim! Você pode cancelar a assinatura a qualquer momento, e continuará tendo acesso até o fim do período já pago.",
     },
     {
-      question: "O Spotify tem um plano gratuito?",
-      answer:
-        "Sim! O plano gratuito permite ouvir músicas com anúncios e algumas limitações, como pulos limitados e qualidade de áudio reduzida.",
-    },
-    {
       question: "Posso usar o Spotify em vários dispositivos?",
       answer:
         "Sim! Você pode acessar o Spotify no celular, computador, smart TVs e até no carro. O Premium permite ouvir offline em até 5 dispositivos.",
@@ -38,9 +33,9 @@ const FAQ = () => {
   };
 
   return (
-    <section className="py-20 bg-[var(--background)]">
+    <section className="py-32 bg-[var(--background)]" id="faq">
       <div className="container mx-auto max-w-7xl px-4">
-        <h2 className="text-4xl font-extrabold text-white text-center mb-10">
+        <h2 className="text-4xl font-extrabold text-white text-left md:text-center mb-10">
           Perguntas <span className="text-spotify">Frequentes</span>
         </h2>
 
@@ -52,7 +47,7 @@ const FAQ = () => {
               onClick={() => toggleFAQ(index)}
             >
               <div className="flex justify-between items-center">
-                <h3 className="text-lg font-semibold text-white">{faq.question}</h3>
+                <h3 className="text-xl font-bold text-white">{faq.question}</h3>
                 <span className="text-2xl text-spotify">
                   {openIndex === index ? "−" : "+"}
                 </span>

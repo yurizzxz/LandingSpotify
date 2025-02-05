@@ -21,7 +21,7 @@ const TopArtists = () => {
   ];
 
   return (
-    <section className="py-40 bg-[var(--background)]">
+    <section className="py-40 bg-[var(--background)]" id="topartists">
       <div className="container mx-auto max-w-7xl px-4">
         <div className="mb-10">
           <h2 className="text-4xl font-extrabold text-white text-left md:text-center mb-2">

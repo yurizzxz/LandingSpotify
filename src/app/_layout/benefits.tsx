@@ -23,7 +23,7 @@ const Benefits = () => {
     ];
   
     return (
-      <section className="py-28 bg-[var(--background)] text-white">
+      <section className="py-28 bg-[var(--background)] text-white" id="beneficios">
         <div className="max-w-7xl container mx-auto px-6 text-left md:text-center">
           <h2 className="text-4xl font-bold">Benefícios do Spotify</h2>
           <p className="mt-4 text-lg opacity-75">

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <section className="relative flex justify-center overflow-hidden py-0 md:py-32 bg-[var(--background)]">
+    <section className="relative flex justify-center overflow-hidden py-0 md:py-32 bg-[var(--background)]" id="about">
       <div className="absolute inset-0">
         <div className="absolute z-50  right-12 w-[600px] h-[550px] bg-spotify blur-[130px] opacity-[0.02]"></div>
         <div className="absolute z-50  top-1/2 left-1 w-[500px] h-[500px] bg-green-800 rounded-full blur-[130px] opacity-5"></div>

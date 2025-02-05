@@ -45,7 +45,7 @@ const Plans = () => {
   ];
 
   return (
-    <section className="relative flex flex-col items-center overflow-hidden pt-28 md:py-28 bg-[var(--background)]">
+    <section className="relative flex flex-col items-center overflow-hidden pt-28 md:py-28 bg-[var(--background)]" id="planos">
       <div className="z-10 max-w-7xl px-2 w-full container mx-auto text-left md:text-center text-white">
         <h1 className="text-4xl md:text-5xl  font-extrabold">
           <span className="text-spotify">Nossos</span> Planos
